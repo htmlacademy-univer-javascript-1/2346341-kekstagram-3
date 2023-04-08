@@ -1,7 +1,8 @@
-import {generatePhotos, stringIsLess} from './utils.js';
+import './picture.js';
+import {generatePhotosData, stringIsLess} from './utils.js';
 
 
 // eslint-disable-next-line no-console
-console.log(generatePhotos());
+console.log(generatePhotosData());
 // eslint-disable-next-line no-console
 console.log((stringIsLess('123', 4)));

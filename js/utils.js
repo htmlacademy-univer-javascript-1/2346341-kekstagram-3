@@ -32,7 +32,7 @@ const createPhotoGenerator = function (min, max) {
 };
 
 
-const generatePhotos = function () {
+const generatePhotosData = function () {
   const resultPhotos = [];
   const photosCount = 25;
   const generatePhoto = createPhotoGenerator(1, photosCount);
@@ -44,4 +44,4 @@ const generatePhotos = function () {
   return resultPhotos;
 };
 
-export  {generatePhotos, stringIsLess};
+export  {generatePhotosData, stringIsLess};
