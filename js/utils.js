@@ -44,4 +44,6 @@ const generatePhotosData = function () {
   return resultPhotos;
 };
 
+
 export  {generatePhotosData, stringIsLess};
+
