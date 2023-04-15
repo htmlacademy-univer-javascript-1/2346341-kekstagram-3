@@ -37,7 +37,7 @@ const generatePhotosData = function () {
   const photosCount = 25;
   const generatePhoto = createPhotoGenerator(1, photosCount);
   for (let i = 0; i < photosCount; i++) {
-    const description = 'Funny';
+    const description = 'Funny photo desc.';
     const photo = generatePhoto(description);
     resultPhotos.push(photo);
   }
