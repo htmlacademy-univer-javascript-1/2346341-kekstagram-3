@@ -4,7 +4,6 @@ import './upload.js';
 import './picture-effects.js';
 import {generatePhotosData, stringIsLessOrEqual} from './utils.js';
 
-
 // eslint-disable-next-line no-console
 console.log(generatePhotosData());
 // eslint-disable-next-line no-console
