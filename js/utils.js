@@ -6,7 +6,7 @@ const getRandomInteger = (a, b) => {
 };
 
 
-const stringIsLess = function (stringInput, maxLength) {
+const stringIsLessOrEqual = function (stringInput, maxLength) {
   return stringInput.length <= maxLength;
 };
 
@@ -37,7 +37,7 @@ const generatePhotosData = function () {
   const photosCount = 25;
   const generatePhoto = createPhotoGenerator(1, photosCount);
   for (let i = 0; i < photosCount; i++) {
-    const description = 'Funny';
+    const description = 'Funny photo desc.';
     const photo = generatePhoto(description);
     resultPhotos.push(photo);
   }
@@ -45,5 +45,4 @@ const generatePhotosData = function () {
 };
 
 
-export  {generatePhotosData, stringIsLess};
-
+export {generatePhotosData, stringIsLessOrEqual};
