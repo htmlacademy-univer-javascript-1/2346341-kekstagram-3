@@ -8,3 +8,4 @@ import {generatePhotosData, stringIsLess} from './utils.js';
 console.log(generatePhotosData());
 // eslint-disable-next-line no-console
 console.log((stringIsLess('123', 4)));
+
