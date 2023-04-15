@@ -45,4 +45,4 @@ const generatePhotosData = function () {
 };
 
 
-export  {generatePhotosData, stringIsLess};
+export {generatePhotosData, stringIsLess};
