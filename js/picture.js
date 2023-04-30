@@ -1,12 +1,12 @@
-import {generatePhotosData} from './utils.js';
+import {getPictures} from './api.js';
 
 const pictureTemplate = document.querySelector('#picture').content;
 const similarListElement = document.querySelector('.pictures');
 const similarListFragment = document.createDocumentFragment();
 
 
-const createPictures = function () {
-  const photos = generatePhotosData();
+const drawPictures = function (photos) {
+  // const photos = generatePhotosData();
   for (const photo of photos) {
     const pictureElement = pictureTemplate.cloneNode(true);
     const newPictureImg = pictureElement.querySelector('.picture__img');
@@ -21,4 +21,4 @@ const createPictures = function () {
 };
 
 
-createPictures();
+getPictures(drawPictures);
