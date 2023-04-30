@@ -1,5 +1,6 @@
 const effectButtons = document.querySelectorAll('.effects__radio');
 const imgPreview = document.querySelector('.img-upload__preview');
+const effectNoneElement = document.querySelector('#effect-none');
 let currentEffect = 'none';
 
 for (const effectButton of effectButtons) {
@@ -12,6 +13,7 @@ for (const effectButton of effectButtons) {
 }
 
 const resetFilter = function () {
+  effectNoneElement.checked = true;
   imgPreview.classList.remove(`effects__preview--${currentEffect}`);
   currentEffect = 'none';
 };

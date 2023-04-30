@@ -1,11 +1,10 @@
 import './picture.js';
 import './picture-scale.js';
-import './upload.js';
+import './form-overlay.js';
 import './picture-effects.js';
-import {generatePhotosData, stringIsLess} from './utils.js';
+import './form-handlers.js';
+import {stringIsLessOrEqual} from './utils.js';
+
 
 // eslint-disable-next-line no-console
-console.log(generatePhotosData());
-// eslint-disable-next-line no-console
-console.log((stringIsLess('123', 4)));
-
+console.log((stringIsLessOrEqual('123', 4)));
